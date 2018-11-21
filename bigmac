@@ -1,0 +1,38 @@
+#!/bin/sh
+
+action="$1"
+shift
+
+case "$action" in
+  -ss)
+    yay -Ss $@
+    ;;
+
+  -si)
+    yay -S $@
+    ;;
+
+  -q)
+    yay -Qq
+    ;;
+
+  -qe)
+    yay -Qqe
+    ;;
+
+  -r)
+	yay -Rs $@
+	;;
+
+  -ru)
+    yay -Rs $(yay -Qqdt)
+    ;;
+
+  -su)
+	yay -Syu
+	;;
+
+  *)
+    printf "%s\n" "View the source for help"
+    ;;
+esac

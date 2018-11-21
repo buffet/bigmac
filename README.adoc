@@ -1,0 +1,22 @@
+bigmac
+======
+
+A small `pacman` / `yay` wrapper, because I'm lazy.
+Especially with those uppercase letters.
+
+Usage
+-----
+
+Make sure you use `pacman` and have `yay` installed.
+
+[options="header"]
+|=============================================
+| Command | Explanation
+| -ss     | Search
+| -si     | Install
+| -q      | Show all packages
+| -qe     | Show explicitly installed packages
+| -r      | Remove
+| -ru     | Remove unneeded
+| -su     | Update
+|=============================================
