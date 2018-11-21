@@ -24,6 +24,10 @@ case "$action" in
 	yay -Rs $@
 	;;
 
+  -qu)
+	yay -Qqdt
+	;;
+
   -ru)
     yay -Rs $(yay -Qqdt)
     ;;
